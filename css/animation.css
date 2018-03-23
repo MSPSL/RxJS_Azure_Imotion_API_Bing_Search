@@ -1,0 +1,33 @@
+#results {
+  height: 240px;
+  width: 320px;
+  background-color: white;
+  background-size: cover;
+}
+#results:before, #results:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+#results:before {
+  -webkit-transform: translateZ(1rem);
+          transform: translateZ(1rem);
+}
+#results:after {
+  height: 3px;
+  width: 3px;
+  -webkit-transform: translateZ(2rem);
+          transform: translateZ(2rem);
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
